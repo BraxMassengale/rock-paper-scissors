@@ -4,10 +4,53 @@
         <title></title>
         <meta name="description" content="This is a javascript application that lets a user play rock, paper, scissors with a computer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
-
+        <section class="content">
+            <div id="heading">
+                <h1>Rock, Paper, Scissor</h1>
+                    <h2>How to play:<h2>
+                        <p>Click "Play Game" and then select either Rock, Paper, or Scissors. Best out of 5 wins!</p>
+                        <p>Remember: Rock beats Scissors, Paper beats Rock, and Scissors beats Paper</p>
+            </div>
+            <div class="game">
+                <div id="computer">
+                    <div class="score-counter" id="computer-score-counter">
+                        <label for="score">Computer's Score:</label>
+                        <p>XXXXX</p>
+                    </div>
+                    <div class="hand" id="computer-hand">
+                        <a href="#"><img src="rock.jpg" alt="rock"></a>
+                        <a href="#"><img src="paper.jpeg" alt="paper"></a>
+                        <a href="#"><img src="scissors.jpeg" alt="scissors"></a>
+                    </div>
+                    <div class="response">
+                        <p>You won!</p>
+                    </div>
+                </div>
+                <div id="player">
+                    <div class="score-counter" id="player-score-counter">
+                        <label for="score">Player's Score</label>
+                        <p>XXXXX</p>
+                    </div>
+                    <div class="hand" id="player-hand">
+                        <a href="#"><img src="rock.jpg" alt="rock"></a>
+                        <a href="#"><img src="paper.jpeg" alt="paper"></a>
+                        <a href="#"><img src="scissors.jpeg" alt="scissors"></a>
+                    </div>
+                    <div class="response"> 
+                        <p>You lost!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="play-game">
+            <button>
+                Play Game
+            </button>
+        </div>
     </body>
 </html>

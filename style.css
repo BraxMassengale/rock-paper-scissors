@@ -1,0 +1,98 @@
+/* Global */
+body {
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* CONTENT */ 
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: aqua; /*Delete*/
+}
+
+/* HEADING */
+#heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 15vh;
+    background-color: red; /*Delete*/
+}
+
+/* GAME */
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: green; /*Delete*/
+}
+
+.hand {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: ivory; /*Delete*/
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.hand img {
+    height: 125px;
+    width: 125px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* COMPUTER */
+#computer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 70vh;
+    background-color: hotpink; /*Delete*/
+}
+
+/* PLAYER */ 
+#player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 70vh;
+    background-color: indigo; /*Delete*/
+}
+
+/* FOOTER */
+#play-game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+

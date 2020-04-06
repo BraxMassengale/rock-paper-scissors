@@ -1,7 +1,7 @@
 let computerChoice = "";
 let playerChoice = "";
 let randomNum = 0;
-let name = prompt("What is your name?")
+let name = "Braxton" //fix
 
 
 function getChoice() {
