@@ -160,7 +160,7 @@ body {
     width: 100vw;
 }
 
-button {
+#play-button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -175,7 +175,7 @@ button {
     transition-duration: 0.4s;
 }
 
-button:hover {
+#play-button:hover {
     width: 22%;
     background-color: white;
     color: #4CAF50;
