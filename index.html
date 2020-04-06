@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body class="noselect">
         <section class="content">
@@ -37,9 +36,9 @@
                         <p>XXXXX</p>
                     </div>
                     <div class="hand" id="player-hand">
-                        <a href="#"><img src="rock.jpg" alt="rock"></a>
-                        <a href="#"><img src="paper.jpeg" alt="paper"></a>
-                        <a href="#"><img src="scissors.jpeg" alt="scissors"></a>
+                        <a href=""><img src="rock.jpg" alt="rock" id="rock"></a>
+                        <a href=""><img src="paper.jpeg" alt="paper" id="paper"></a>
+                        <a href=""><img src="scissors.jpeg" alt="scissors" id="scissors"></a>
                     </div>
                     <div class="response"> 
                         <p>You lost!</p>
@@ -48,7 +47,8 @@
             </div>
         </section>
         <div id="play-game">
-            <input id="play-button" type="submit" name="play-button" value="Play Game" onclick="game();"/>
+            <input id="play-button" type="submit" name="play-button" value="Play Game"/>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

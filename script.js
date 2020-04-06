@@ -2,10 +2,39 @@ let computerChoice = "";
 let playerChoice = "";
 let randomNum = 0;
 let name = "Braxton" //fix
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+const play_game_button = document.getElementById("play-button");
+
+function main() {
+    rock.addEventListener('click', function () {
+        playerInput = "rock";
+        playRound(playerInput);
+    })
+
+    paper.addEventListener('click', function () {
+        playerInput = "paper";
+        playRound(playerInput);
+    })
+
+    scissors.addEventListener('click', function () {
+        playerInput = "scissors";
+        playRound(playerInput);
+    })
+
+    play_game_button.addEventListener('click', function(playerInput) {
+        alert("Let's play!")
+        alert("Select Rock, Paper, or Scissors")
+        playRound(playerInput);
+    })
+}
+
+main();
 
 
 function getChoice() {
-    return Math.floor(Math.random() * Math.floor(3));
+    return Math.floor(Math.random() * 3);
 }
 
 let computerPlay = function(choice) {
@@ -25,7 +54,7 @@ let computerPlay = function(choice) {
     return computerChoice
 }
 
-let playRound = function(playerInput = prompt("Do you choose Rock, Paper, or Scissors?")) {
+let playRound = function(playerInput) {
     computerChoice = computerPlay(getChoice());
     if (playerInput.toLowerCase() === "rock" || playerInput.toLowerCase() === "paper" || playerInput.toLowerCase() === "scissors") {
         playerChoice = playerInput;
