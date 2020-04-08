@@ -1,36 +1,45 @@
 let computerChoice = "";
 let playerChoice = "";
 let randomNum = 0;
-let name = "Braxton" //fix
+let name = "Braxton" //TODO: Fix
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
+const how_to_play = document.getElementById("how-to-play");
+const how_to_play_p1 = document.getElementById("how-to-play-p1");
+const how_to_play_p2 = document.getElementById("how-to-play-p2");
 const play_game_button = document.getElementById("play-button");
 
 function main() {
     rock.addEventListener('click', function () {
         playerInput = "rock";
-        playRound(playerInput);
     })
 
     paper.addEventListener('click', function () {
         playerInput = "paper";
-        playRound(playerInput);
     })
 
     scissors.addEventListener('click', function () {
         playerInput = "scissors";
-        playRound(playerInput);
     })
 
     play_game_button.addEventListener('click', function(playerInput) {
         alert("Let's play!")
         alert("Select Rock, Paper, or Scissors")
+
         playRound(playerInput);
     })
 }
 
 main();
+
+//TODO: Make the "Play Game" button play a game ^1
+
+//TODO: Make the player and computer score labels update in real time ^2
+
+//TODO: Fix the game() function so that the correct number of rounds is played ^3
+
+//TODO: After the play game button is pressed, the how to play,etc. section should display the results of each round ^4
 
 
 function getChoice() {
