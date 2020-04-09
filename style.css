@@ -150,7 +150,7 @@ body {
 }
 
 /* FOOTER */
-#play-game {
+#reset-game {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -160,7 +160,7 @@ body {
     width: 100vw;
 }
 
-#play-button {
+#reset-button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -175,7 +175,7 @@ body {
     transition-duration: 0.4s;
 }
 
-#play-button:hover {
+#reset-button:hover {
     width: 22%;
     background-color: white;
     color: #4CAF50;

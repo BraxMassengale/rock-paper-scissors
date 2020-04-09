@@ -12,7 +12,7 @@
             <div id="heading">
                 <h1>Rock, Paper, Scissor</h1>
                     <h2 id="how-to-play">How to play:<h2>
-                        <p id="how-to-play-p1">Click "Play Game" and then select either Rock, Paper, or Scissors. Best out of 5 wins!</p>
+                        <p id="how-to-play-p1">Select either Rock, Paper, or Scissors. Best out of 5 wins!</p>
                         <p id = "how-to-play-p2">Remember: Rock beats Scissors, Paper beats Rock, and Scissors beats Paper</p>
             </div>
             <div class="game">
@@ -36,9 +36,9 @@
                         <p id="player-score">0</p>
                     </div>
                     <div class="hand" id="player-hand">
-                        <a href=""><img src="rock.jpg" alt="rock" id="rock"></a>
-                        <a href=""><img src="paper.jpeg" alt="paper" id="paper"></a>
-                        <a href=""><img src="scissors.jpeg" alt="scissors" id="scissors"></a>
+                        <a href="" onclick="return false"><img src="rock.jpg" alt="rock" id="rock"></a>
+                        <a href="" onclick="return false"><img src="paper.jpeg" alt="paper" id="paper"></a>
+                        <a href="" onclick="return false"><img src="scissors.jpeg" alt="scissors" id="scissors"></a>
                     </div>
                     <div class="response"> <!--TODO: Fix this class name to match its purpose--> 
                         <p id="player-choice-banner"></p>
@@ -46,9 +46,9 @@
                 </div>
             </div>
         </section>
-        <div id="play-game">
-            <input id="play-button" type="submit" name="play-button" value="Play Game"/>
+        <div id="reset-game">
+            <input id="reset-button" type="submit" name="reset-button" value="Reset"/>
         </div>
-        <script src="script2.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
